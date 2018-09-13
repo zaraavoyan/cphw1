@@ -1,1 +1,2 @@
-# cphw1
+1) About editing the bubbles file - the first assignments were pretty much straightforward: I just tried to look for the necessary functions that would change what I needed them to.
+2) About the CPU - I know that a lot of the times while working I try to multitask and watch movies, but usually, I end up focusing on one or the other, and definitely can't keep up if I try to do both, just like the CPU dedicates a different amount of time to each process.
