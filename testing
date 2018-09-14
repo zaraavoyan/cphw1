@@ -1,0 +1,46 @@
+
+var bubbles = [];
+
+function setup() {
+    createCanvas(700, 700);
+
+    for (var i = 0; i < 10; i++) {
+        var bubble = {
+            x: random(width),
+            y: random(height),
+            radius: random(30, 30)
+        };
+        bubbles.push(bubble);
+    }
+}
+
+function mousePressed() {
+ if (mouseIsPressed) {
+	ellipse(random(700),random(700),20);
+	 fill(30,30,30);
+	 bubbles.push;
+ }
+}
+	
+function draw() {
+    background(255);
+
+    for (var i = 0; i < bubbles.length; i++) {
+        var bubble = bubbles[i];
+
+        if (dist(mouseX, mouseY, bubble.x, bubble.y) < bubble.radius) {
+            if (mouseIsPressed) {
+                bubbles.splice(i, 1); // remove this bubble!
+						}
+        } else if (dist(mouseX, mouseY, bubble.x, bubble.y) > bubble.radius) {
+          if (mouseIsPressed) {
+						ellipse(random(height), random(width), 20);
+					bubbles.push();}
+        }
+
+        ellipse(bubble.x, bubble.y, bubble.radius*2);
+        bubble.x += random(-1,1);
+        bubble.y += random(-1,1);
+    }
+
+}
